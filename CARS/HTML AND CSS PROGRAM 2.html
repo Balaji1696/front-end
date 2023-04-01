@@ -7,132 +7,197 @@
 
     
    <style type="text/css">
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            background: green !important;
-            overflow-x: hidden;
-        }
-        .font{
-            color: gold;
-        }
-header{
-    background-color: black;
-    display: flex;
-    position: sticky;
-    height: 13vh;
-    top: 0%;
-}
-
+        
+            .container {
+                background:green!important;
+            }
+            .font{
+                font-size:150%;
+                font-style: normal;
+                color:black;
+            }
 h1{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 230%;
-}
-h3,
-h4{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 170%;
+      float:center;
+    
 }
 p{
     font-size: 185%;
-    color:whitesmoke;
+    color:#000
 }
-img{
+
+
+.column {
+    float: right;
+    width: 80vw;
+}
+.row {
     float: left;
-    height: 50%;
-
+    width: 80vw;
 }
 
-nav {
-    display: inline-block;
-    width: 70%;
-    font-size: large;
-    font-family: fantasy;
-    color: red;
-}
-.navbar ul{
-    list-style: none;
-    text-align: right;
+body{
+    background:chartreuse;
     
+}
+.nav {
+    float: right;
+}
+.navbar {
+    background:black;
+    border-radius: 20px;
      }
-     .navbar li{
-        display: inline-block;
+     .navbar :hover{
+        
+        color:red;
+        background:#000;
      }
 
-.navbar li a{
-    display: inline-block;
-    text-decoration: none;
-    color:white;
-    margin-top: 50%;
-    padding: 10px;
+.navbar ul {
+    overflow: auto;
 }
-.navbar li a:hover{
-    color: red;
-}
-footer {
-   background-color:black;
-   color:white;
-   padding: 30px;
-   align-items: center;
-}
-
-.footer-content {
-    font-size: 40px;
-}
-.footer-content a{
-    color: whitesmoke;
-    margin: 5 10px;
-}
-.footer-content a:hover{
-    color: red;
-}
-.footer-menu li{
+.navbar li {
+    float: right;
     list-style: none;
-}
-.footer-menu a{
-    text-decoration: none;
-    font-style: italic;
-    font-size: 25px;
+    margin: 14px 10px;
     color: white;
-    padding: 0px;
-    margin: 9px;
-    display: flex;
-
+    font-weight: 600;
 }
-.footer-bottom{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:blueviolet;
-    font-size: 20px;
+.navbar li a {
+    border: 20px solid black;
+    border-radius: 32px;
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
 }
-.footer-menu a:hover{
+.navbar li a:hover {
     color: red;
 }
-iframe{
-    text-align: right;
+.search {
+    float: right;
+    color: white;
+    padding: 20px 10px;
 }
-address{
-    font-size: medium;
-    text-align: right;
+.navbar input {
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 3px 20px;
+    width: 40px;
 }
-header.img{
-    height: 25px;
+* {
+    box-sizing: border-box;
 }
-@media only screen and (max-width:600px){
 
-}
 
- 
+
+footer {
+    position: absolute;
+    bottom:-185rem;
+    left: 0;
+    right: 0;
+    background:#111;
+    height: auto;
+    width: 80vw;
+    padding-top: 10px;
+    color: #fff;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h5 {
+    font-size: 10px;
+    font-weight: 300px;
+    text-transform: capitalize;
+    line-height: 10px;
+}
+.footer-content p {
+    max-width: 300px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.fa{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1px 0 3px 0;
+    display: none;
+}
+.fa li{
+    margin: 0 10px;
+}
+.fa a{
+    text-decoration: none;
+    color:#fff;
+    border: 1.1px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+.fa a i {
+    font-size: 20px;
+    width: 20px;
+}
+.fa a:hover i {
+    color:#0ff;
+}
+.footer-bottom {
+    background: #000;
+    width: 80vw;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.footerbottom p {
+    float:left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+    color: #44bae8;
+    font-size: 16px;
+    text-decoration: none;
+}
+.footer-menu {
+    float:right;
+}
+.footer-menu ul {
+    display: flex;
+}
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+.footer-menu-ul li a{
+    color: #cfd2d6;
+    text-decoration: none;
+}
+.footer-menu ul li a:hover {
+    color: #27bcda;
+}
+.fa {
+            padding: 20px;
+            display:flex;
+            font-size: 20px;
+            width: 40px;
+            text-decoration: none;
+           margin: 5px 80px;
+        }
+        @media only screen and (max-width:1000px){
+            p{
+            font-size: 185%;
+            color:#000
+        }
+
+        } 
+            
+        
 </style>
    </head>
 <body>
     <header>
-        
-        <img src="IMAGES/logo.png.jpg" alt="logo">
-        <h1 class="font">Welcome to Cars</h1>
        
         <nav class="navbar">
             <ul>
@@ -141,6 +206,8 @@ header.img{
                 <li> <a href="#"> service </a> </li>
                 <li> <a href="#"onclick="redirectToPage()"> Book </a> </li>
                 <div class="search">
+                    <img src="IMAGES/logo.png.jpg" alt="logo"height="50px"width="55px"align-items="left">
+                </div>
             </ul>
                 
         </nav>
@@ -148,69 +215,92 @@ header.img{
     <section>           
             <div class="container">
                 <div class="row">
-                    
-                    <img src="IMAGES/sports car.png.jpg"alt="banner" height="80px"><br>
-                     <h2 class="font">Ferari</h2>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere suscipit ex cupiditate, vero, ullam esse veritatis doloribus corporis, necessitatibus iusto tempora neque a ab dolores iste tempore aperiam odit perferendis.</p>            
-                        <div class="column">
+                    <div class="column">
                         
-                            
-                            <h3 class="font">BMW</h3>
-                            <img src="IMAGES/BMW.png.jpg"alt="banner"> <br><hr>
-                         <p >Bayerische Motoren Werke AG, abbreviated as BMW (German pronunciation: [ˌbeːʔɛmˈveː] (listen)), is a German multinational manufacturer of luxury vehicles and motorcycles headquartered in Munich,Bavaria.<br><br> The corporation was founded in 1916 as a manufacturer of aircraft engines, which it produced from 1917 until 1918 and again from 1933 to 1945.<br><br>BMW is headquartered in Munich and produces motor vehicles in Germany, Brazil, China, India, Mexico, the Netherlands, South Africa, the United Kingdom, and the United States. The Quandt family is a long-term shareholder of the company (with the remaining shares owned by public float), following investments by the brothers Herbert and Harald Quandt in 1959 which saved the company from bankruptcy.<br><br><br><br><br><br><br></p>    
-                          <div class="column">
-                            
-                            
-                           <img src="IMAGES/porche.png.jpg"alt="banner"><br>
-                            <h4 class="font">porche</h4>
-                             <p>Porsche's company logo stems from the coat of arms of the Free People's State of Württemberg of Weimar Germany of 1918–1933, which had Stuttgart as its capital.(The Bundesland of Württemberg-Hohenzollern used the same arms from 1945 to 1952, while Stuttgart during these years operated as the capital of adjacent Württemberg-Baden.) The arms of Stuttgart appear in the middle of the logo as an inescutcheon, for the company had its headquarters in Stuttgart.F.<br><br> A. Porsche founded his own design company, Porsche Design, which is renowned for exclusive sunglasses, watches, furniture, and many other luxury articles. Louise's son and Ferry's nephew Ferdinand Piëch, who was responsible for mechanical development of Porsche's production and racing cars (including the very successful 911, 908 and 917 models), formed his own engineering bureau, and developed a five-cylinder-inline diesel engine for Mercedes-Benz. A short time later he moved to Audi (used to be a division, then a subsidiary, of Volkswagen), and pursued his career through the entire company, ultimately becoming the chairman of Volkswagen Group.<br><br><br><br><br><br></p>
-                          </div>
-                        </div>
-                    </div>
+                <h1 class="font">Welcome to cars</h1>
+                    <h2 class="font">Ferari</h2>
+                    <img src="C:\Users\Balaji\OneDrive\Desktop\New folder (2)\sports car.png.jpg"alt="banner"style="max-width:100%">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere suscipit ex cupiditate, vero, ullam esse veritatis doloribus corporis, necessitatibus iusto tempora neque a ab dolores iste tempore aperiam odit perferendis.</p>
                 </div>
-                
+                </div>
+            </div>            
+    </section>
 
+    <section>
+        
+                <div class="row">
+                <div class="column">
+                    <img src="C:\Users\Balaji\OneDrive\Desktop\New folder (2)/BMW.png.jpg"alt="banner" style=" max-width: 90%;">   
+                </div>
+                </div>
+                        <div class="row">
+                        <div class="column">
+                            <h3 class="font">BMW</h3>
+                         <p >Bayerische Motoren Werke AG, abbreviated as BMW (German pronunciation: [ˌbeːʔɛmˈveː] (listen)), is a German multinational manufacturer of luxury vehicles and motorcycles headquartered in Munich,Bavaria.<br><br> The corporation was founded in 1916 as a manufacturer of aircraft engines, which it produced from 1917 until 1918 and again from 1933 to 1945.<br><br>BMW is headquartered in Munich and produces motor vehicles in Germany, Brazil, China, India, Mexico, the Netherlands, South Africa, the United Kingdom, and the United States. The Quandt family is a long-term shareholder of the company (with the remaining shares owned by public float), following investments by the brothers Herbert and Harald Quandt in 1959 which saved the company from bankruptcy.<br><br><br><br><br><br><br></p>
+                        </div>
+                        </div>
+                     
+    </section>
+    <section>
+        
+                <div class="row">
+                <div class="column">
+                    <img src="C:\Users\Balaji\OneDrive\Desktop\New folder (2)/porche.png.jpg"alt="banner"style="max-width:80%;">
+                    <h4 class="font">porche</h4>
+                    <p>Porsche's company logo stems from the coat of arms of the Free People's State of Württemberg of Weimar Germany of 1918–1933, which had Stuttgart as its capital.(The Bundesland of Württemberg-Hohenzollern used the same arms from 1945 to 1952, while Stuttgart during these years operated as the capital of adjacent Württemberg-Baden.) The arms of Stuttgart appear in the middle of the logo as an inescutcheon, for the company had its headquarters in Stuttgart.F.<br><br> A. Porsche founded his own design company, Porsche Design, which is renowned for exclusive sunglasses, watches, furniture, and many other luxury articles. Louise's son and Ferry's nephew Ferdinand Piëch, who was responsible for mechanical development of Porsche's production and racing cars (including the very successful 911, 908 and 917 models), formed his own engineering bureau, and developed a five-cylinder-inline diesel engine for Mercedes-Benz. A short time later he moved to Audi (used to be a division, then a subsidiary, of Volkswagen), and pursued his career through the entire company, ultimately becoming the chairman of Volkswagen Group.<br><br><br><br><br><br></p>
+            </div>
+                </div>   
         </section>
         <script>
             function redirectToPage(){
                 window.location.href="Enquiry form.html"
             }
         </script>
-    </section>
         <footer>
+            <div class="footer-content">
                 <h5>Website Developer </h5>
-                <div class="footer-content">           
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>   
+                <ul class="Socials">
+                <li>            
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>   
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <li>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <li>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-               
-            <div class="footer-menu">
-                <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">contact</a></li>
-                        <li><a href="">service</a></li>
+                </li>
+                </ul>
+              </div>           
+                <div class="footer-bottom">
+              <ul class="footer-menu">
+                <ul li class="f-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">service</a></li>
                         <li><a href="#"onclick="redirectToPage()">Book</a></li>
-                        <li><a href=""> Blog</a></li>
+                      <li><a href="#"> Blog</a></li>
                 </ul>           
-             </div>
-             <address>
-                Balaji v
-                Guru kripa Mens PG
-                velachery chennai 600047
-                phone:8825886484
-                Email:balajibala16226@gmail.com
-            </address>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31103.09166349864!2d80.2022623081108!3d12.979113314449876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d9ff2065a3b%3A0x66435015604038cc!2sVelachery%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1679297437422!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>   
-             <div class="footer-bottom">
-                <p>copyright &copy;<a href=""target="-blank">Designed and Developed by Balaji</a></p>
-                </div>
-                
-               </footer>
+                    </div>
+                    <address>
+                        Balaji v
+                        Guru kripa Mens PG
+                        velachery chennai 600047
+                        phone:8825886484
+                        Email:balajibala16226@gmail.com
+                    </address>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31103.09166349864!2d80.2022623081108!3d12.979113314449876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d9ff2065a3b%3A0x66435015604038cc!2sVelachery%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1679297437422!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>   
+                     <div class="footer-bottom">
+                        <p>copyright &copy;<a href=""target="-blank">Designed and Developed by Balaji</a></p>
+                        </div>
+                        
+        </footer>
 </body>
 </html>
     
